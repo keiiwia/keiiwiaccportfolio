@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optical Illusion</title>
+    <link rel="stylesheet" href="projectstyles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="projectscript.js"></script>
+    <script>
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.key === "F12" ||
+          (event.ctrlKey && event.shiftKey && event.key === "I")
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="../projects/p5optical illusion/sketch.js"></script>
+    <div></div>
+    <div class="Taskbar">
+      <div class="Browser">
+        <div class="about">
+
+        </div>
+        <div class="AboutMeBrowser" id="popup-window">
+          <div class="AboutMeWeb" id="header">
+            <span class="close-button" id="close-button"></span> 
+            <h3>Optical Illusion</h3>
+            <p>
+                The code for this assignment is significantly simpler and easier to understand than some of my previous projects, mainly because the torus 
+                <br> and its functions are already coded into the p5.js library--hence, I don't really have to code much of the animation itself.
+                <br> I was kind of inspired by the retro internet optical illusions that early digital animators created (on those janky websites that definitely don't load anymore). In particular, I remember a program my elementary school gave us to learn math, and one of the opening animations was this bohr's atom model, the axes spinning counter to each other. This is a bit of a recreation of that memory, albeit, sized up.
+                <br>
+                <br>
+                As per usual, my color palette tends to lean toward brighter, more saturated colors. 
+                <br>
+                <br>
+                The code itself wasn't too difficult to figure out, but there was a little bit of a struggle trying to figure out how to get the 
+                <br> "spinning" effect between both toruses. I'd never used the torus function/shape before, so it was something completely new to me,
+                <br> although the p5.js reference is always a godsend.<br />
+              <br />
+            </p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="Taskbarline"></div>
+      <div class="AboutMeTask" id="aboutMeTask">
+        <div id="aboutMeButton">
+          <h1
+            style="
+              margin-left: 50px;
+              font-size: 20px;
+              top: -1px;
+              cursor: pointer;
+              user-select: none;
+            "
+          >
+            Optical Illusion
+          </h1>
+        </div>
+      </div>
+      
+
+      <!--menu-->
+      <div class="Start"></div>
+      <div class="StartMenu" style="user-select: none">
+        <div class="StartMenu-item">
+
+          <div class="menu-item">
+            <img src="../assets/briefcase.png" />
+            <a href="lostandfound.html" id="link">
+            <p>Lost and Found</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/cd.png" />
+            <a href="facegenerator.html" id="link">
+            <p>Face Generator</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/explorer.png" />
+            <a href="clock.html" id="link">
+              <p>Context Clock</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/icon.png" />
+            <a href="opticalillusion.html" id="link">
+            <p>Optical Illusion</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/recyclingbin.png" />
+            <a href="portrait.html" id="link">
+            <p>Data Portrait</p>
+            </a>
+            </div>
+
+            <div class="menu-item">
+            <img src="../assets/phone.png" />
+            <a href="autobio.html" id="link">
+            <p>Autobio Game</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-button">
+          <a href="../index.html"><img src="../assets/HomeButton.png" /></a>
+        </div>
+      </div>
+      <div class="Language"><h1 style="user-select: none">EN</h1></div>
+      <div class="Time">
+        <div id="clock" style="user-select: none"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+The code for this assignment is significantly simpler and easier to understand than some of my previous projects, mainly because the torus and its functions are already coded into the p5.js library--hence, I don't really have to code much of the animation itself.
+I was kind of inspired by the retro internet optical illusions that early digital animators created (on those janky websites that definitely don't load anymore). In particular, I remember a program my elementary school gave us to learn math, and one of the opening animations was this bohr's atom model, the axes spinning counter to each other. This is a bit of a recreation of that memory, albeit, sized up.
+
+As per usual, my color palette tends to lean toward brighter, more saturated colors. 
+
+The code itself wasn't too difficult to figure out, but there was a little bit of a struggle trying to figure out how to get the "spinning" effect between both toruses. I'd never used the torus function/shape before, so it was something completely new to me, although the p5.js reference is always a godsend.

@@ -1,0 +1,5 @@
+I wanted to make a face that reacts to your mouse when hovering over it, sort of like an "anti-touch, don't touch me" expression, where the mouse makes the face shrink "away" from it. If you actually clicked on the face, its eyes will change into many many colors, sort of like it's panicking. 
+
+Mostly, I used the mouseX, mouseY functions, and how the changing coordinates affects shapes, colors, and how those interact with each other. I also implemented several push() and pop() commands, as certain translations and rotations would have otherwise changed the orientation of the rest of the shapes.
+
+I made a small animation with the arms/blush, although there's still some troubleshooting to be done, as the blush areas are not actually returning to their original location as I intended.

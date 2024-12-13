@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Context Clock</title>
+    <link rel="stylesheet" href="projectstyles.css" />
+    <script src="projectscript.js"></script>
+    <script>
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.key === "F12" ||
+          (event.ctrlKey && event.shiftKey && event.key === "I")
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div></div>
+    <div class="Taskbar">
+      <div class="Browser">
+        <div class="about">
+            <iframe src="https://editor.p5js.org/keiiwia/full/RoC803Y7y" id="game"></iframe>
+        </div>
+        <div class="AboutMeBrowser" id="popup-window">
+          <div class="AboutMeWeb" id="header">
+            <span class="close-button" id="close-button"></span> 
+            <h3>Autobiographical Game</h3>
+            <p>
+             The autobiographical game is a game revolving around my childhood, childhood nightmares, 
+             <br>and how they interact with the place that I call home.
+             <br><br>
+             The objective of this game is to collect items, which in turn, influences the main character's outer appearance. As the game progresses,
+             <br> the main character continues to age, extending beyond even my current age to display what I <em>hope</em> the future looks like.
+             <br><br>
+            This is currently the greyboxed/whiteboxed version of the game, as the assets are still in creation.
+
+
+            </p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="Taskbarline"></div>
+      <div class="AboutMeTask" id="aboutMeTask">
+        <div id="aboutMeButton">
+          <h1
+            style="
+              margin-left: 50px;
+              font-size: 20px;
+              top: -1px;
+              cursor: pointer;
+              user-select: none;
+            "
+          >
+            Autobio Game
+          </h1>
+        </div>
+      </div>
+      
+
+      <!--menu-->
+      <div class="Start"></div>
+      <div class="StartMenu" style="user-select: none">
+        <div class="StartMenu-item">
+
+          <div class="menu-item">
+            <img src="../assets/briefcase.png" />
+            <a href="lostandfound.html" id="link">
+            <p>Lost and Found</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/cd.png" />
+            <a href="facegenerator.html" id="link">
+            <p>Face Generator</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/explorer.png" />
+            <a href="clock.html" id="link">
+              <p>Context Clock</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/icon.png" />
+            <a href="opticalillusion.html" id="link">
+            <p>Optical Illusion</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/recyclingbin.png" />
+            <a href="portrait.html" id="link">
+            <p>Data Portrait</p>
+            </a>
+            </div>
+
+            <div class="menu-item">
+            <img src="../assets/phone.png" />
+            <a href="autobio.html" id="link">
+            <p>Autobio Game</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-button">
+          <a href="../index.html"><img src="../assets/HomeButton.png" /></a>
+        </div>
+      </div>
+      <div class="Language"><h1 style="user-select: none">EN</h1></div>
+      <div class="Time">
+        <div id="clock" style="user-select: none"></div>
+      </div>
+    </div>
+  </body>
+</html>

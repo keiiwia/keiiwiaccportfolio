@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelly Su | Critical Computation Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.key === "F12" ||
+          (event.ctrlKey && event.shiftKey && event.key === "I")
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div></div>
+    <div class="Taskbar">
+      <div class="Background"></div>
+      <div class="Character"></div>
+      <div class="Browser">
+        <div class="about">
+          <a href="project.html"><img src="assets/folder.png" ></a>
+          <div class="desc">
+            <p style="user-select: none">About Me!</p>
+          </div>
+        </div>
+        <div class="AboutMeBrowser" id="popup-window">
+          <div class="AboutMeWeb" id="header">
+            <!-- <span class="close-button" id="close-button">×</span> -->
+            <h3>Critical Computation Portfolio</h3>
+            <p>
+              All projects are made in p5.js.<br />
+              <br />
+              Contains all the projects from Parsons School of Design Fall 2024 Critical Computation Lecture and Lab projects.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="Taskbarline"></div>
+      <div class="AboutMeTask" id="aboutMeTask">
+        <div id="aboutMeButton">
+          <h1
+            style="
+              margin-left: 50px;
+              font-size: 20px;
+              top: -1px;
+              cursor: pointer;
+              user-select: none;
+            "
+          >
+            Intro
+          </h1>
+        </div>
+      </div>
+      
+      <div class="Start"></div>
+      <div class="StartMenu" style="user-select: none">
+        <div class="StartMenu-item">
+
+          <div class="menu-item">
+            <img src="assets/briefcase.png" />
+            <a href="projects/lostandfound.html" id="yt-link">
+            <p>Lost and Found</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="assets/cd.png"/>
+            <a href="projects/facegenerator.html" id="yt-link">
+            <p>Face Generator</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="assets/explorer.png"/>
+            <a href= "projects/clock.html" id="yt-link">
+              <p>Context Clock</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="assets/icon.png"/>
+            <a href="projects/opticalillusion.html" id="yt-link">
+            <p>Optical Illusion</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="assets/recyclingbin.png"/>
+            <a href="projects/portrait.html" id="yt-link">
+            <p>Data Portrait</p>
+            </a>
+            </div>
+
+            <div class="menu-item">
+            <img src="assets/phone.png"/>
+            <a href="projects/autobio.html" id="yt-link">
+            <p>Autobio Game</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-button">
+          <a href="index.html"><img src="assets/HomeButton.png" /></a>
+        </div>
+      </div>
+      <div class="Language"><h1 style="user-select: none">EN</h1></div>
+      <div class="Time">
+        <div id="clock" style="user-select: none"></div>
+      </div>
+    </div>
+  </body>
+</html>

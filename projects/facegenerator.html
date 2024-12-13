@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Generator</title>
+    <link rel="stylesheet" href="projectstyles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="projectscript.js"></script>
+    <script>
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.key === "F12" ||
+          (event.ctrlKey && event.shiftKey && event.key === "I")
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="../projects/p5face generator/sketch.js"></script>
+    <div></div>
+    <div class="Taskbar">
+      <div class="Browser">
+        <div class="about">
+
+        </div>
+        <div class="AboutMeBrowser" id="popup-window">
+          <div class="AboutMeWeb" id="header">
+            <span class="close-button" id="close-button"></span> 
+            <h3>Face Generator</h3>
+            <p>
+                I wanted to make a face that reacts to your mouse when hovering over it, sort of like an "anti-touch, don't touch me" expression, where the mouse makes the face shrink "away" from it. If you actually clicked on the face, its eyes will change into many many colors, sort of like it's panicking. 
+                <br><br>
+                Mostly, I used the mouseX, mouseY functions, and how the changing coordinates affects shapes, colors, and how those interact with each other. 
+                <br>I also implemented several push() and pop() commands, as certain translations and rotations would have otherwise changed the orientation of the rest of the shapes.
+                <br> <br> 
+                I made a small animation with the arms/blush, although there's still some troubleshooting to be done, as the blush areas are not actually returning to their original location as I intended.
+            </p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="Taskbarline"></div>
+      <div class="AboutMeTask" id="aboutMeTask">
+        <div id="aboutMeButton">
+          <h1
+            style="
+              margin-left: 50px;
+              font-size: 20px;
+              top: -1px;
+              cursor: pointer;
+              user-select: none;
+            "
+          >
+            Face Generator
+          </h1>
+        </div>
+      </div>
+      
+
+      <!--menu-->
+      <div class="Start"></div>
+      <div class="StartMenu" style="user-select: none">
+        <div class="StartMenu-item">
+
+          <div class="menu-item">
+            <img src="../assets/briefcase.png" />
+            <a href="lostandfound.html" id="link">
+            <p>Lost and Found</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/cd.png" />
+            <a href="facegenerator.html" id="link">
+            <p>Face Generator</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/explorer.png" />
+            <a href="clock.html" id="link">
+              <p>Context Clock</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/icon.png" />
+            <a href="opticalillusion.html" id="link">
+            <p>Optical Illusion</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/recyclingbin.png" />
+            <a href="portrait.html" id="link">
+            <p>Data Portrait</p>
+            </a>
+            </div>
+
+            <div class="menu-item">
+            <img src="../assets/phone.png" />
+            <a href="autobio.html" id="link">
+            <p>Autobio Game</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-button">
+          <a href="../index.html"><img src="../assets/HomeButton.png" /></a>
+        </div>
+      </div>
+      <div class="Language"><h1 style="user-select: none">EN</h1></div>
+      <div class="Time">
+        <div id="clock" style="user-select: none"></div>
+      </div>
+    </div>
+  </body>
+</html>

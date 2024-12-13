@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost and Found</title>
+    <link rel="stylesheet" href="projectstyles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="projectscript.js"></script>
+    <script>
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.key === "F12" ||
+          (event.ctrlKey && event.shiftKey && event.key === "I")
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="../projects/p5lost and found/sketch.js"></script>
+    <div></div>
+    <div class="Taskbar">
+      <div class="Browser">
+        <div class="about">
+
+        </div>
+        <div class="AboutMeBrowser" id="popup-window">
+          <div class="AboutMeWeb" id="header">
+            <span class="close-button" id="close-button"></span> 
+            <h3>Lost and Found</h3>
+            <p>
+              My partner was Elaine, whose object was a diamond flower necklace. 
+              <br> <br>
+              The description she provided was as follows: <em>"A diamond flower necklace,</em> 
+              <br> <em>the petals of which are at different elevations." </em>
+              <br><br>
+              I am assuming that the flower necklace was a simple flower design, with diamonds in the middle of each flower petal,
+              <br> and the flower pendant/charm was on a small chain. Hence, the "poppy" style of flower with 5 petals.
+            </p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="Taskbarline"></div>
+      <div class="AboutMeTask" id="aboutMeTask">
+        <div id="aboutMeButton">
+          <h1
+            style="
+              margin-left: 50px;
+              font-size: 20px;
+              top: -1px;
+              cursor: pointer;
+              user-select: none;
+            "
+          >
+            Lost/Found
+          </h1>
+        </div>
+      </div>
+      
+
+      <!--menu-->
+      <div class="Start"></div>
+      <div class="StartMenu" style="user-select: none">
+        <div class="StartMenu-item">
+
+          <div class="menu-item">
+            <img src="../assets/briefcase.png" />
+            <a href="lostandfound.html" id="link">
+            <p>Lost and Found</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/cd.png" />
+            <a href="facegenerator.html" id="link">
+            <p>Face Generator</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/explorer.png" />
+            <a href="clock.html" id="link">
+              <p>Context Clock</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/icon.png" />
+            <a href="opticalillusion.html" id="link">
+            <p>Optical Illusion</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/recyclingbin.png" />
+            <a href="portrait.html" id="link">
+            <p>Data Portrait</p>
+            </a>
+            </div>
+
+            <div class="menu-item">
+            <img src="../assets/phone.png" />
+            <a href="autobio.html" id="link">
+            <p>Autobio Game</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-button">
+          <a href="../index.html"><img src="../assets/HomeButton.png" /></a>
+        </div>
+      </div>
+      <div class="Language"><h1 style="user-select: none">EN</h1></div>
+      <div class="Time">
+        <div id="clock" style="user-select: none"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+
+The parametric mugs are from a project I found online, by user: burnedsap. I wanted to find a generative way to make the coffee mugs, rather than hardcoding them in as lines/shapes. 
+
+The mugs are created by connecting 8 different "points" together vectorally, with four points representing the cross section of the height, and four points representing the cross section of the width. 
+
+I read through the creator's documentation, and learned the math behind how he worked up until this point, and I modified it so that the generative mugs will generally look a specific way, rather than the more open/random look that the og creator made them.
+
+
+Aside from that, my idea was to make a clock based on the different coffee drinks that I typically enjoy/make. I grew up learning to brew coffee and tea, and during high school, my brother bought an espresso machine, and I learned to pull shots and make a greater variety of drinks during that time. This coffee clock is based off of (the average of) how long I can make these drinks, not a specific barista, or a Starbucks place. 
+
+Each section of the type of drink will have a "countdown timer," designating how long it takes for me. 
+
+I think after this project, I'm going to revise the project's aesthetics a little more, including the exact time countdown for each section. Additionally, I want to make it so the countdown timer is confined in the coffee mug itself, and I've sort of figured that out, but I haven't gotten the time to debug and integrate it into my code. 

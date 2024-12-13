@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Context Clock</title>
+    <link rel="stylesheet" href="projectstyles.css" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script> -->
+    <script src="projectscript.js"></script>
+    <script>
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.key === "F12" ||
+          (event.ctrlKey && event.shiftKey && event.key === "I")
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- <script src="../projects/p5clock/sketch.js"></script>
+    <script src="../projects/p5clock/AfacadFlux-VariableFont_slnt,wght.ttf"></script>
+    <script src="../projects/p5clock/ReenieBeanie-Regular.ttf"></script> -->
+    <div></div>
+    <div class="Taskbar">
+      <div class="Browser">
+        
+        <div class="about">
+          <iframe src="https://editor.p5js.org/keiiwia/full/UP3LJdVo4"></iframe>
+        </div>
+        <div class="AboutMeBrowser" id="popup-window">
+          <div class="AboutMeWeb" id="header">
+            <span class="close-button" id="close-button"></span> 
+            <h3>Context Clock</h3>
+            <p>
+             
+            The parametric mugs are from a project I found online, by user: burnedsap. I wanted to find a generative way to make the coffee mugs, rather than hardcoding them in as lines/shapes. 
+            <br><br>
+            The mugs are created by connecting 8 different "points" together vectorally, with four points representing the 
+            <br>cross section of the height, and four points representing the cross section of the width. 
+            <br><br>
+            I read through the creator's documentation, and learned the math behind how he worked up until this point, and I 
+            <br>modified it so that the generative mugs will generally look a specific way, rather than the more open/random look that the og creator made them.
+            <br><br>
+            Aside from that, my idea was to make a clock based on the different coffee drinks that I typically enjoy/make. I grew up learning to brew coffee and tea, and during high school, my brother bought an espresso machine, and I learned to pull shots and make a greater variety of drinks during that time. 
+            <br>This coffee clock is based off of (the average of) how long I can make these drinks, not a specific barista, or a Starbucks place. 
+            <br><br>
+            Each section of the type of drink will have a "countdown timer," designating how long it takes for me. 
+            <br><br>
+            I think after this project, I'm going to revise the project's aesthetics a little more, including the exact time countdown for each section. 
+            <br>Additionally, I want to make it so the countdown timer is confined in the coffee mug itself, and I've sort of figured that out, but I haven't gotten the time to debug and integrate it into my code. 
+
+            </p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="Taskbarline"></div>
+      <div class="AboutMeTask" id="aboutMeTask">
+        <div id="aboutMeButton">
+          <h1
+            style="
+              margin-left: 50px;
+              font-size: 20px;
+              top: -1px;
+              cursor: pointer;
+              user-select: none;
+            "
+          >
+            Context Clock
+          </h1>
+        </div>
+      </div>
+      
+
+      <!--menu-->
+      <div class="Start"></div>
+      <div class="StartMenu" style="user-select: none">
+        <div class="StartMenu-item">
+
+          <div class="menu-item">
+            <img src="../assets/briefcase.png" />
+            <a href="lostandfound.html" id="link">
+            <p>Lost and Found</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/cd.png" />
+            <a href="facegenerator.html" id="link">
+            <p>Face Generator</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/explorer.png" />
+            <a href="clock.html" id="link">
+              <p>Context Clock</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/icon.png" />
+            <a href="opticalillusion.html" id="link">
+            <p>Optical Illusion</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="../assets/recyclingbin.png" />
+            <a href="portrait.html" id="link">
+            <p>Data Portrait</p>
+            </a>
+            </div>
+
+            <div class="menu-item">
+            <img src="../assets/phone.png" />
+            <a href="autobio.html" id="link">
+            <p>Autobio Game</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-button">
+          <a href="../index.html"><img src="../assets/HomeButton.png" /></a>
+        </div>
+      </div>
+      <div class="Language"><h1 style="user-select: none">EN</h1></div>
+      <div class="Time">
+        <div id="clock" style="user-select: none"></div>
+      </div>
+    </div>
+  </body>
+</html>
