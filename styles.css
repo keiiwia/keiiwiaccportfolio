@@ -100,6 +100,11 @@ html{
     
   }
 
+  .resumeID{
+    width: 400px;
+    height: 500px;
+    align-content: center;
+  } 
   /* about me page*/
   .aboutmeBIOS{
     background-color: black;

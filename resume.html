@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelly Su | Critical Computation Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.key === "F12" ||
+          (event.ctrlKey && event.shiftKey && event.key === "I")
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div></div>
+    <div class="Taskbar">
+      <div class="Background"></div>
+      <div class="Character"></div>
+      <div class="Browser">
+
+        <!--open/closed tab-->
+        <div class="AboutMeWeb" id="header">
+            <object class="resumeID" type="application/pdf" data="assets/25-resume.pdf">
+                <p>PDF cannot be displayed, please email kellysu.usa@gmail.com.</p>
+            </object>
+            </p>
+        <div class="AboutMeBrowser" id="popup-window">
+            <div class="AboutMeWeb" id="header">
+                <p>Here's my resume. Please download for best viewing. If you're unable to view, for some reason, please email me <em>suk186@newschool.edu.</em> In the meantime, check out my other projects! </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Taskbarline"></div>
+      <div class="AboutMeTask" id="aboutMeTask">
+        <div id="aboutMeButton">
+          <h1
+            style="
+              margin-left: 50px;
+              font-size: 20px;
+              top: -1px;
+              cursor: pointer;
+              user-select: none;
+            "
+          >
+            Resume
+          </h1>
+        </div>
+      </div>
+      
+      <div class="Start"></div>
+      <div class="StartMenu" style="user-select: none">
+        <div class="StartMenu-item">
+
+          <div class="menu-item">
+            <img src="assets/briefcase.png" />
+            <a href="projects/lostandfound.html" id="yt-link">
+            <p>Lost and Found</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="assets/cd.png"/>
+            <a href="projects/facegenerator.html" id="yt-link">
+            <p>Face Generator</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="assets/explorer.png"/>
+            <a href= "projects/clock.html" id="yt-link">
+              <p>Context Clock</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="assets/icon.png"/>
+            <a href="projects/opticalillusion.html" id="yt-link">
+            <p>Optical Illusion</p>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <img src="assets/recyclingbin.png"/>
+            <a href="projects/portrait.html" id="yt-link">
+            <p>Data Portrait</p>
+            </a>
+            </div>
+
+            <div class="menu-item">
+            <img src="assets/phone.png"/>
+            <a href="projects/autobio.html" id="yt-link">
+            <p>Autobio Game</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-button">
+          <a href="index.html"><img src="assets/HomeButton.png" /></a>
+        </div>
+      </div>
+      
+    
+    </div>
+  </body>
+</html>
+
+
+
+
