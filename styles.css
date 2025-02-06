@@ -40,11 +40,10 @@ html{
   h1 {
     font-family: ms_sans;
     font-size: 25px;
-    color: #f5f8fb;
+    color: black;
     display: block;
     position: relative;
     top: -4px;
-    text-shadow: 1px 1px 5px black;
   }
   
   p {
@@ -56,8 +55,8 @@ html{
     font-size: 15px;
   }
 
-  /* .about should be turned to grid  */
-
+  /* note: .about should be turned to grid  */
+  /* home page nav icons (about, resume) */
   .about {
     margin-left: 50px;
     margin-top: 50px;
@@ -75,17 +74,18 @@ html{
    display: flex;
    text-align: center;
    padding-left: 15px;
+   line-height: 1px;
     
   }
 
   .resume {
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 20px;
     align-items: center;
   }
 
   .resume img {
-    max-width: 100px;
+    max-width: 110px;
     width: auto;
     height: auto;
     margin-right: 10px;
@@ -94,11 +94,13 @@ html{
   .resume p {
    display: flex;
    text-align: center;
-   padding-left: 20px;
+   padding-left: 30px;
    padding-top: -20px;
+   line-height: 1px;
     
   }
 
+  /* about me page*/
   .aboutmeBIOS{
     background-color: black;
     /* background-image: url(assets/ui/BIOS.png); */
@@ -125,7 +127,7 @@ html{
     line-height: 7px;
   }
 
-
+  /* start menu nav bar*/
   .StartMenu-item {
     margin-top: 90px;
     margin-left: 35px;
@@ -181,19 +183,6 @@ html{
     z-index: -2;
   }
   
-  /* .Character {
-    grid-area: 1 / 1 / 4 / 6;
-    background-image: url("asset/lying.gif");
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  } */
-  
   .Browser {
     grid-area: 1 / 1 / 3 / 6;
     position: absolute;
@@ -235,7 +224,6 @@ html{
     background-size: auto 51px;
     background-repeat: no-repeat;
     background-position: left center;
-    /* background-color: azure; */
   }
   
   .StartMenu {
@@ -249,9 +237,6 @@ html{
     bottom: 51px;
     height: 100%;
     z-index: 7;
-    /*  overflow: hidden; */
-    /* position: fixed;  */
-    /* background-color: aqua; */
   }
   
   .StartMenu.visible {
@@ -272,17 +257,6 @@ html{
     z-index: 1;
     /* background-color: #ffffff; */
   }
-  
-  /* #clock {
-    font-family: ibmvga8;
-    color: #f5f8fb;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 20px;
-    text-shadow: 1px 1px 2px black;
-    position: relative;
-    top: -5px;
-  } */
   
   #yt-link {
     text-decoration-line: none;
