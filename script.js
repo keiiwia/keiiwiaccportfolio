@@ -1,20 +1,20 @@
-function updateTime() {
-    const clockElement = document.getElementById("clock");
-    const now = new Date();
-    let hours = now.getHours();
-    const minutes = now.getMinutes().toString().padStart(2, "0");
-    const seconds = now.getSeconds().toString().padStart(2, "0");
-    const ampm = hours >= 12 ? "PM" : "AM";
+// function updateTime() {
+//     const clockElement = document.getElementById("clock");
+//     const now = new Date();
+//     let hours = now.getHours();
+//     const minutes = now.getMinutes().toString().padStart(2, "0");
+//     const seconds = now.getSeconds().toString().padStart(2, "0");
+//     const ampm = hours >= 12 ? "PM" : "AM";
   
-    hours = hours % 12;
-    hours = hours ? hours : 12;
+//     hours = hours % 12;
+//     hours = hours ? hours : 12;
   
-    clockElement.textContent = `${hours}:${minutes}:${seconds} ${ampm}`;
-  }
+//     clockElement.textContent = `${hours}:${minutes}:${seconds} ${ampm}`;
+//   }
   
   document.addEventListener("DOMContentLoaded", function () {
-    updateTime();
-    setInterval(updateTime, 1000);
+    // updateTime();
+    // setInterval(updateTime, 1000);
   
     const startButton = document.querySelector(".Start");
     const startMenu = document.querySelector(".StartMenu");

@@ -10,6 +10,18 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+  font-family: ms_sans;
+  src: url(fonts/ms_sans_serif.woff) format('woff');
+  src: url(fonts/ms_sans_serif.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: ms_sansB;
+  src: url(fonts/ms_sans_serif_bold.woff) format('woff');
+  src: url(fonts/ms_sans_serif_bold.woff2) format('woff2');
+}
   
 html{
   background-color: #007E7D;
@@ -21,7 +33,7 @@ html{
   }
   
   h1 {
-    font-family: ibmvga8;
+    font-family: ms_sans;
     font-size: 25px;
     color: #f5f8fb;
     display: block;
@@ -31,10 +43,10 @@ html{
   }
   
   p {
-    font-family: ibmvga8;
+    font-family: ms_sans;
   }
   p1 {
-    font-family: ibmvga8;
+    font-family: ms_sans;
     margin-left: -10px;
     font-size: 15px;
   }
@@ -58,8 +70,6 @@ html{
    padding-left: 15px;
     
   }
-
-
 
   .StartMenu-item {
     margin-top: 90px;
@@ -201,14 +211,14 @@ html{
   
   .Time {
     grid-area: 3 / 5 / 4 / 6;
-    background-image: url("assets/ui/tab.png");
+    /* background-image: url("assets/ui/tab.png"); */
     background-size: 173px 51px;
     height: 100%;
     z-index: 1;
     /* background-color: #ffffff; */
   }
   
-  #clock {
+  /* #clock {
     font-family: ibmvga8;
     color: #f5f8fb;
     font-size: 22px;
@@ -217,7 +227,7 @@ html{
     text-shadow: 1px 1px 2px black;
     position: relative;
     top: -5px;
-  }
+  } */
   
   #yt-link {
     text-decoration-line: none;
@@ -253,7 +263,7 @@ html{
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
 
-    font-family: ibmvga8;
+    font-family: ms_sansB;
   }
   
   .AboutMeWeb {
