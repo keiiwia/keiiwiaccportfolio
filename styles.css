@@ -22,6 +22,11 @@
   src: url(fonts/ms_sans_serif_bold.woff) format('woff');
   src: url(fonts/ms_sans_serif_bold.woff2) format('woff2');
 }
+
+@font-face {
+  font-family: perfectVGA;
+  src: url(fonts/Perfect\ DOS\ VGA\ 437.ttf) format('truetype');
+}
   
 html{
   background-color: #007E7D;
@@ -51,6 +56,8 @@ html{
     font-size: 15px;
   }
 
+  /* .about should be turned to grid  */
+
   .about {
     margin-left: 50px;
     margin-top: 50px;
@@ -70,6 +77,54 @@ html{
    padding-left: 15px;
     
   }
+
+  .resume {
+    margin-left: 50px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .resume img {
+    max-width: 100px;
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .resume p {
+   display: flex;
+   text-align: center;
+   padding-left: 20px;
+   padding-top: -20px;
+    
+  }
+
+  .aboutmeBIOS{
+    background-color: black;
+    /* background-image: url(assets/ui/BIOS.png); */
+    /* background-repeat: no-repeat; */
+    box-sizing: border-box;
+    width:100%;
+    min-height: 100dvh;
+  }
+
+  .aboutmeBIOS img{
+    width:60%;
+    height: auto;
+    padding-left: 8em;
+    padding-top: 1em;
+    z-index: auto;
+  }
+
+  .aboutmeBIOS p{
+    color: #808080;
+    font-family: perfectVGA;
+    font-size: 22px;
+    padding-left: 6.5em;
+    padding-top: -1rem;
+    line-height: 7px;
+  }
+
 
   .StartMenu-item {
     margin-top: 90px;
@@ -149,7 +204,7 @@ html{
   
   .Taskbarline {
     grid-area: 3 / 1 / 4 / 6;
-    background-image: url("assets/ui/taskbarfull.png");
+    background-image: url("assets/ui/taskbar.png");
     height: 100%;
     z-index: 0;
     background-size: cover;
@@ -160,7 +215,7 @@ html{
     background-image: url("assets/ui/tab.png");
     height: 100%;
     z-index: 0;
-    margin: 7px -10px;
+    margin: 7px -5px;
     background-repeat: no-repeat;
   }
   
@@ -256,7 +311,7 @@ html{
     background-image: url("assets/ui/window.png");
     background-size: cover;
     background-repeat: no-repeat;
-    cursor: move; /* Change cursor to indicate draggable */
+    cursor: move; 
     z-index: 1;
   
     transform: scale(0.5);

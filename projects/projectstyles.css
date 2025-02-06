@@ -7,6 +7,23 @@
     src: url('../fonts/Web437_ACM_VGA_8x16.woff2') format('woff2'),
         url('../fonts/Web437_ACM_VGA_8x16.woff') format('woff');
 }
+
+@font-face {
+  font-family: ms_sans;
+  src: url(../fonts/ms_sans_serif.woff) format('woff');
+  src: url(../fonts/ms_sans_serif.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: ms_sansB;
+  src: url(../fonts/ms_sans_serif_bold.woff) format('woff');
+  src: url(../fonts/ms_sans_serif_bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: perfectVGA;
+  src: url(../fonts/Perfect\ DOS\ VGA\ 437.ttf) format('truetype');
+}
   
 html{
   background-color: #007E7D;
@@ -18,7 +35,7 @@ html{
   }
   
   h1 {
-    font-family: ibmvga8;
+    font-family: ms_sansB;
     font-size: 25px;
     color: #f5f8fb;
     display: block;
@@ -28,10 +45,10 @@ html{
   }
   
   p {
-    font-family: ibmvga8;
+    font-family: ms_sans;
   }
   p1 {
-    font-family: ibmvga8;
+    font-family: ms_sans;
     margin-left: -10px;
     font-size: 15px;
   }
@@ -62,27 +79,6 @@ iframe{
     float: left;
     margin-bottom: 2%;
 }
-
-  .about {
-    margin-left: 50px;
-    margin-top: 50px;
-    align-items: center;
-  }
-
-  .about img {
-    max-width: 100px;
-    width: auto;
-    height: auto;
-    margin-right: 10px;
-  }
-
-  .about p {
-   display: flex;
-   text-align: center;
-   padding-left: 15px;
-    
-  }
-
 
 
   .StartMenu-item {
@@ -152,7 +148,7 @@ iframe{
   
   .Taskbarline {
     grid-area: 3 / 1 / 4 / 6;
-    background-image: url("../assets/ui/taskbarfull.png");
+    background-image: url("../assets/ui/taskbar.png");
     height: 100%;
     z-index: 0;
     background-size: cover;
@@ -163,7 +159,7 @@ iframe{
     background-image: url("../assets/ui/tab.png");
     height: 100%;
     z-index: 0;
-    margin: 7px -10px;
+    margin: 7px -5px;
     background-repeat: no-repeat;
   }
   
@@ -222,7 +218,7 @@ iframe{
   }
   
   #clock {
-    font-family: ibmvga8;
+    font-family: ms_sans;
     color: #f5f8fb;
     font-size: 22px;
     font-weight: bold;
@@ -267,7 +263,7 @@ iframe{
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
 
-    font-family: ibmvga8;
+    font-family: ms_sans;
   }
   
   .AboutMeWeb {
