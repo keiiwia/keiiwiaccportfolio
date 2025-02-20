@@ -1,6 +1,7 @@
 # keiiwiaccportfolio
 Hi! This is Kelly,  aka Keiiwia or Keiwa, as I'm known online. 
 This is my porfolio that I made for Parsons School of Design, Design and Technology BFA. 
+For the most part, this website will be slowly updated with more projects, images, and such.
 
 Thank you to these resources, whether it be inspiration, typefaces, or snippets of code: 
 https://github.com/jdan (fonts)

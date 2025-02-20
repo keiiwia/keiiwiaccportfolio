@@ -100,6 +100,51 @@ html{
     
   }
 
+  .advcc {
+    margin-left: 40px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .advcc img {
+    max-width: 110px;
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .advcc p {
+   display: flex;
+   text-align: center;
+   padding-left: 25px;
+   padding-top: -50px;
+   line-height: 1px;
+    
+  }
+
+  .prototype {
+    margin-left: 40px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .prototype img {
+    max-width: 110px;
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    padding-left: 10px;
+  }
+
+  .prototype p {
+   display: flex;
+   text-align: center;
+   padding-left: 25px;
+   padding-top: -50px;
+   line-height: 1px;
+    
+  }
+
   .resumeID{
     width: 400px;
     height: 600px;
