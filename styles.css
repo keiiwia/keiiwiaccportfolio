@@ -55,6 +55,41 @@ html{
     font-size: 15px;
   }
 
+  ul{
+    list-style: none;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  a {
+    font-family: ms_sans;
+    color: black;
+
+  }
+
+  a:hover {
+    color:#ff0081;
+  }
+
+  .prototypelist{
+    font-family: ms_sans;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0%;
+
+  }
+
+  .prototypelist li{
+    padding: 5% 0;
+    white-space: nowrap;
+  }
+
   /* note: .about should be turned to grid  */
   /* home page nav icons (about, resume) */
   .about {
