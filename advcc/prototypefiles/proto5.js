@@ -9,10 +9,10 @@ function preload() {
 
 function setup() {
   colorMode(HSB);
-  createCanvas(400, 400);
+  createCanvas(600, 400);
   background(0);
 
-  letterPoints = font.textToPoints(word, width/2 -150, height/2, 90);
+  letterPoints = font.textToPoints(word, width/2 -200, height/2, 90);
 }
 
 function draw() {

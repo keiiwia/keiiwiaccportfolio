@@ -23,7 +23,7 @@ function draw() {
 
   let density = map(mouseX, 0, width, 0, 0.5);
 
-  points = font.textToPoints(chosen, 40, 220, 100, {sampleFactor: density, simplifyThreshold: 0,});
+  points = font.textToPoints(chosen, width/2-100, height/2, 100, {sampleFactor: density, simplifyThreshold: 0,});
 
   for (let i = 0; i < points.length; i++) {
     fill(0);

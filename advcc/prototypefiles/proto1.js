@@ -52,6 +52,11 @@ class fadePoint {
             this.a += 6;
         }
         }
+
+        //if (distance >= 50) return; makes the code cleaner, situational
+        //if () logic() ; if its only one line you dont have to open curlies
+
+        //continue can be used within nested if/for loops -- doesnt EXIT, just moves onto the next
         
     }
 
