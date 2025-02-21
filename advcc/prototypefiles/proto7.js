@@ -6,9 +6,9 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 400);
   frameRate(10);
-  pointArray = font.textToPoints(chosen, height/2-125, width/2, 60, {sampleFactor: 0.5,});
+  pointArray = font.textToPoints(chosen, 85, width/2-75, 100, {sampleFactor: 0.6,});
   
   for(let i = 0; i < pointArray.length; i++) {
     textPoints.push(new Thorns(pointArray[i].x, pointArray[i].y));
@@ -47,18 +47,10 @@ class Thorns {
       this.sizex = random(1,2);
       this.sizey = random(1,2);
     } 
-    // else{
-    //     this.sizex = 1;
-    //     this.sizey = 1;
-    // }
   }
 
   display() {
     rect(this.x, this.y, this.sizex, this.sizey); 
-    // for (let pt of textPoints) {
-    //     wiggle(pt);
-    //     vertex(pt.x, pt.y);
-    //   }
 }
   
   reset() { //reset = set current x/y vals to the og

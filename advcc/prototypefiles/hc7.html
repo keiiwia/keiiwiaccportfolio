@@ -3,16 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typography: Prototype</title>
+    <title>Typography: Prototype 7</title>
     <link rel="stylesheet" href="protostyle.css">
-
+    <link rel="stylesheet" href="../../styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="../../script.js"></script>
 </head>
 <body>
+    <div class="Taskbar">
+        <div class="Background"></div>
+        <div class="Character"></div>
+        <div class="Browser">
 
-    <div id="challenge"></div>
-    <script src="proto7.js"></script>
-    <p>testing</p>
+          <!--open/closed tab-->
+          <div class="AboutMeWeb" id="header">
+          <div class="AboutMeBrowser" id="popup-window">
+              <div class="AboutMeWeb" id="header">
+                  <!-- <p>Projects and such for Spring 2025, Advanced Critical Computation. Stuff is in the works at the moment, but is updated periodically. <br> <br><strong>For minor assignments, find the homepage apps. For major projects, click into the taskbar.</strong><br> <br>To my beloved professor, I'm sorry some of these are late.  </p>
+                    -->
+                    <!--inputting the p5 sketch natively/locally-->
+                    <div class="iframe">
+                        <div id="challenge"></div>
+                        <script src="proto7.js"></script>
+                        <p>scatter</p>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Taskbarline"></div>
+        <div class="AboutMeTask" id="aboutMeTask">
+          <div id="aboutMeButton">
+            <h1
+              style="
+                margin-left: 50px;
+                font-size: 20px;
+                top: -1px;
+                cursor: pointer;
+                user-select: none;
+              "
+            >
+              Adv. CC Home
+            </h1>
+          </div>
+        </div>
+        
+        <div class="Start"></div>
+        <div class="StartMenu" style="user-select: none">
+          <div class="StartMenu-item">
+            <div class="menu-item">
+              <img src="../../assets/briefcase.png" />
+              <!-- <a href="projects/lostandfound.html" id="yt-link"> -->
+              <p>Generative Typography</p>
+              </a>
+            </div>
+  
+            <div class="menu-item">
+              <img src="../../assets/cd.png"/>
+              <!-- <a href="projects/facegenerator.html" id="yt-link"> -->
+              <p>Experimental Camera</p>
+              </a>
+            </div>
+  
+            <div class="menu-item">
+              <img src="../../assets/explorer.png"/>
+              <!-- <a href= "projects/clock.html" id="yt-link"> -->
+                <p>Community Tool</p>
+              </a>
+            </div>
+  
+            <div class="menu-item">
+              <img src="../../assets/icon.png"/>
+              <!-- <a href="projects/opticalillusion.html" id="yt-link"> -->
+              <p>Digital Divination</p>
+              </a>
+            </div>
+  
+            <!-- <div class="menu-item">
+              <img src="assets/recyclingbin.png"/>
+              <a href="projects/portrait.html" id="yt-link">
+              <p>Data Portrait</p>
+              </a>
+              </div>
+  
+              <div class="menu-item">
+              <img src="assets/phone.png"/>
+              <a href="projects/autobio.html" id="yt-link">
+              <p>Autobio Game</p>
+              </a>
+            </div> -->
+          </div>
+  
+          <div class="menu-button">
+            <a href="index.html"><img src="../../assets/HomeButton.png" /></a>
+          </div>
+        </div>
+        
+      
+      </div>
+
+
+    
     
 </body>
 </html>
