@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
   
-    let fortune;
+    let fortune = "Waiting for fortune...";
   
     fetch('https://fortune-cookie4.p.rapidapi.com/slack', {
       method: 'GET',
@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(response => response.json())
       .then(data => {
         console.log("API response:", data);
-        // Adjust depending on the actual API structure:
         fortune = data.text;
       })
       .catch(error => {
