@@ -67,7 +67,7 @@ class Color{
             this.b += 2;
             this.a += 1;
             
-            this.pos.add(direction);
+            
 
         } else {
             this.r -= 0.3;
