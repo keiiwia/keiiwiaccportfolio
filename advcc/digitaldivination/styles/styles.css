@@ -1,0 +1,8 @@
+.header{
+    flex: auto;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    /* height: 10vh; */
+    padding: 10vh;
+}

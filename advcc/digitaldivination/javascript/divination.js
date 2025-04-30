@@ -3,18 +3,19 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const submitButton = document.getElementById("fortunebutton");
     const myResponseElement = document.getElementById("fortuneheader");
+    
+    //check to ensure everything loads 
+    // if (!submitButton) {
+    //   console.error("No button with ID 'fortunebutton' found.");
+    //   return;
+    // }
   
-    if (!submitButton) {
-      console.error("No button with ID 'fortunebutton' found.");
-      return;
-    }
+    // if (!myResponseElement) {
+    //   console.error("No element with ID 'fortuneheader' found.");
+    //   return;
+    // }
   
-    if (!myResponseElement) {
-      console.error("No element with ID 'fortuneheader' found.");
-      return;
-    }
-  
-    let fortune = "Waiting for fortune...";
+    let fortune;
   
     fetch('https://fortune-cookie4.p.rapidapi.com/slack', {
       method: 'GET',
@@ -34,8 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   
     submitButton.addEventListener("click", () => {
-      console.log("Button clicked");
-      console.log("Setting fortune:", fortune);
+      console.log("clicked");
       myResponseElement.textContent = fortune;
     });
   });
