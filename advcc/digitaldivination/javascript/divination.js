@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const checkLotteryButton = document.getElementById("check-lottery");
     const lotteryResultElement = document.getElementById("lottery-result");
     const resetBtn = document.getElementById("reset-btn");
-    
-    // Initialize animations
     const animations = new FortuneCookieAnimations();
     
     // check to ensure everything loads 
@@ -21,11 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Helper to show/hide
+    // show/hide elements
     function show(el) { el.classList.remove('hidden'); }
     function hide(el) { el.classList.add('hidden'); }
 
-    // Generate 5 random numbers between 1 and 69
+    // generate 5 random numbers between 1 and 69 for lucky numbers; free fortune cookie version api doesn't give lucky numbers
     function generateLuckyNumbers() {
         const numbers = new Set();
         while(numbers.size < 5) {
@@ -34,13 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
         return Array.from(numbers).sort((a, b) => a - b);
     }
 
-    // Check if numbers match any recent lottery results
+    // check if numbers match any recent lottery results
+    //async for managing stress load?? i think? idk i searched online and it said i should use async for fetching data
     async function checkLotteryNumbers(numbers) {
         try {
             const response = await fetch('https://data.ny.gov/resource/d6yy-54nr.json?$limit=30');
             const data = await response.json();
             
-            // Check if any of our numbers match the winning numbers
+            // check if any of our numbers match the winning numbers
             for (const draw of data) {
                 const winningNumbers = draw.winning_numbers.split(' ').map(Number);
                 const matches = numbers.filter(num => winningNumbers.includes(num));
@@ -78,11 +77,12 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(data => {
         console.log("API response:", data);
         fortune = data.text;
+        //remove the fortune header from api bc idk why they included it in the first place
         fortune = fortune.replace(/^🥠 your fortune reads:/i, '').trim();
       })
       .catch(() => { fortune = "Failed to fetch fortune."; });
   
-    // Cookie click: split halves, then show fortune
+    // split halves -> show fortune
     cookieWhole.addEventListener("click", () => {
         hide(cookieWhole);
         show(cookieHalves);
@@ -93,22 +93,21 @@ document.addEventListener("DOMContentLoaded", () => {
             fortuneHeader.textContent = fortune;
             luckyNumbers = generateLuckyNumbers();
             luckyNumbersElement.textContent = luckyNumbers.join(' - ');
-            // Fade in the button after fortune and numbers
             setTimeout(() => {
                 checkLotteryButton.classList.add('visible');
             }, 900); // matches the lucky-numbers animation delay
         }, 700);
     });
 
-    // Prevent double trigger on halves
+    // prevent double trigger on halves
     cookieHalves.addEventListener("click", (e) => {
         e.stopPropagation();
     });
 
-    // Check lottery button
+    // check lottery button
     checkLotteryButton.addEventListener("click", async () => {
         checkLotteryButton.classList.remove('visible');
-        // Fade out cookie halves
+        // get rid of cookie halves
         cookieHalves.classList.add('fade-out');
         hide(fortuneReveal);
         setTimeout(() => {
@@ -119,12 +118,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 show(resetBtn);
                 resetBtn.classList.add('visible');
             });
-        }, 500); // Wait for fade-out
+        }, 500); 
     });
 
-    // Reset button
+    // reset button
     resetBtn.addEventListener("click", () => {
-        // Reset all UI
+        // reset all ui
         hide(fortuneReveal);
         hide(lotteryResultElement);
         hide(resetBtn);
@@ -135,9 +134,9 @@ document.addEventListener("DOMContentLoaded", () => {
         show(cookieLabel);
         cookieLabel.textContent = "Tap cookie to open";
         checkLotteryButton.classList.remove('visible');
-        // Remove fade-out for next time
+        // remove fade-out for next time
         cookieHalves.classList.remove('fade-out');
-        // Animate whole cookie and label flying up
+        // cookie fly up
         cookieWhole.classList.add('fly-up');
         cookieLabel.classList.add('fly-up');
         setTimeout(() => {
@@ -146,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 700);
     });
 
-    // On load, show only cookie area
+    // show only cookie area on load
     hide(fortuneReveal);
     hide(lotteryResultElement);
     hide(resetBtn);
