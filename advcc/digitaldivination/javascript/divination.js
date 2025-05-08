@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
             for (const draw of data) {
                 const winningNumbers = draw.winning_numbers.split(' ').map(Number);
                 const matches = numbers.filter(num => winningNumbers.includes(num));
-                if (matches.length >= 3) {
+                if (matches.length >= 1) {
                     return {
                         matched: true,
                         message: `Congratulations! Your numbers matched ${matches.length} numbers from the ${draw.draw_date} drawing! Consider buying a lottery ticket!`
