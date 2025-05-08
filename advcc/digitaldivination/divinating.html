@@ -4,19 +4,32 @@
   <meta charset="UTF-8">
   <title>divinating...</title>
   <link rel="stylesheet" href="./styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <h1>thank you for your patronage</h1>
-    </div>
-    <div class="fortunetelling">
-        <h3 id="fortuneheader">please draw a fortune</h3>
-        <div id="visualeffects">
-            <button id="fortunebutton">button :D</button>
+  <div class="main-bg">
+    <div class="center-content">
+      <div id="cookie-area" class="cookie-area">
+        <img id="cookie-whole" class="cookie-whole" src="./assets/ico-cookie-red.svg" alt="Fortune Cookie" />
+        <div class="cookie-halves hidden">
+          <img id="cookie-down-img" class="cookie-half left" src="./assets/updated-cookie-down.png" alt="Bottom Cookie Half" />
+          <img id="cookie-top-img" class="cookie-half right" src="./assets/updated-cookie-top.png" alt="Top Cookie Half" />
         </div>
+        <div class="cookie-label">Tap cookie to open</div>
+        <div id="fortune-reveal" class="fortune-reveal hidden">
+          <div id="fortuneheader" class="fortune-text"></div>
+          <div id="lucky-numbers" class="lucky-numbers"></div>
+          <button id="check-lottery" class="next-button">Check Lottery Numbers</button>
+        </div>
+      </div>
+      
+      <div id="lottery-result" class="lottery-result hidden"></div>
+      <button id="reset-btn" class="reset-btn hidden">Pull another fortune?</button>
     </div>
-  
+  </div>
 
+
+  <script src="./javascript/animations.js"></script>
   <script src="./javascript/divination.js"></script>
 </body>
 </html>
