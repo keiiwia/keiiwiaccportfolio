@@ -16,11 +16,11 @@ let eightiesbutton, ninetiesbutton, tensbutton, funbutton;
 
 //preload all assets (camera/filters)
 function preload() {
-  img = loadImage('vhsbackground.jpg');
-  supereight = loadImage('supereightfilter.png');
-  kodak = loadImage('kodakoverlay.jpg');
-  polaroid = loadImage('polaroid.png');
-  filmburn = loadImage('filmburn.jpg');
+  img = loadImage('assets/vhsbackground.jpg');
+  supereight = loadImage('assets/supereightfilter.png');
+  kodak = loadImage('assets/kodakoverlay.jpg');
+  polaroid = loadImage('assets/polaroid.png');
+  filmburn = loadImage('assets/filmburn.jpg');
   }
 
 function setup() {
@@ -31,6 +31,10 @@ function setup() {
   cam.size(600, 400);
   cam.hide();
   background(r, g, b);
+  canvas.style('position', 'absolute');
+  canvas.style('z-index', '9');
+  canvas.style('pointer-events', 'auto'); // or 'none' if needed
+  background(0); // confirm canvas is drawing
   
 }
 
