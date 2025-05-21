@@ -16,11 +16,11 @@ let eightiesbutton, ninetiesbutton, tensbutton, funbutton;
 
 //preload all assets (camera/filters)
 function preload() {
-  img = loadImage('./experimentalcam/assets/vhsbackground.jpg');
-  supereight = loadImage('./experimentalcam/assets/supereightfilter.png');
-  kodak = loadImage('./experimentalcam/assets/kodakoverlay.jpg');
-  polaroid = loadImage('./experimentalcam/assets/polaroid.png');
-  filmburn = loadImage('./experimentalcam/assets/filmburn.jpg');
+  img = loadImage('../experimentalcam/assets/vhsbackground.jpg');
+  supereight = loadImage('../experimentalcam/assets/supereightfilter.png');
+  kodak = loadImage('../experimentalcam/assets/kodakoverlay.jpg');
+  polaroid = loadImage('../experimentalcam/assets/polaroid.png');
+  filmburn = loadImage('../experimentalcam/assets/filmburn.jpg');
   }
 
 function setup() {
