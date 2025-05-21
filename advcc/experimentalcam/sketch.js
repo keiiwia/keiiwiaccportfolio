@@ -91,7 +91,7 @@ function draw() {
   funbutton.style ('color','#F2E9E4');
   funbutton.mousePressed(fun);
 
-  image(cam, 0, 0, 600, 400);  // draw camera feed first
+  // image(cam, 0, 0, 600, 400);  // draw camera feed first
 
 // then draw the fun scanline effect AFTER
   if (funOn && cam.width > 0 && cam.height > 0) {
